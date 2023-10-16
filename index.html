@@ -19,7 +19,7 @@
     var direction=1;
     function add() {
         var image = document.createElement("img");
-        image.src="pacman1.jpg";
+        image.src="./images/pacman1.jpg";
         var xpos = Math.random()*800;
         var ypos = Math.random()*400;
         var xvel =Math.floor( Math.random()*20)  ; 
@@ -43,25 +43,26 @@
             y_pos[i]+=y_vel[i];
 
            if(count % 2==0){
-            pacman[i].src="./pacman2.jpg"
+            pacman[i].src="./images/pacman2.jpg"
            }
+           
            else{
-            pacman[i].src="./pacman1.jpg"
+            pacman[i].src="./images/pacman1.jpg"
            }
            if(x_pos[i] >x_pos[i] + x_vel[i]){
             if(count % 2==0){
-            pacman[i].src="./pacman3.jpg"
+            pacman[i].src="./images/pacman3.jpg"
            }
            else{
-            pacman[i].src="./pacman4.jpg"
+            pacman[i].src="./images/pacman4.jpg"
            }
            }
            if(y_pos[i] >y_pos[i] + y_vel[i]){
             if(count % 2==0){
-            pacman[i].src="./pacman3.jpg"
+            pacman[i].src="./images/pacman3.jpg"
            }
            else{
-            pacman[i].src="./pacman4.jpg"
+            pacman[i].src="./images/pacman4.jpg"
            }
            }
         if ((x_pos[i] <=10)||(x_pos[i] >800) ){
